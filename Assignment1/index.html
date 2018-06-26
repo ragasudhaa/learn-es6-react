@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Fetch Github Repositories</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <div class="github-repos">
+            <h2>Fetch Github Repositories</h2>
+            <div class="form-container">
+                <input type="text" name="search-repos" placeholder="Enter Github name" id="search-repos" />
+                <input type="button" name="fetch-repos" id="fetch-repo" value="Search" />
+            </div>
+            <div class="display-repos">
+                <ul></ul>
+            </div>
+            <div class="loader-icon"></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

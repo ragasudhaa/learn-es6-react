@@ -1,0 +1,128 @@
+body{
+	font-family: Arial, Serif;
+	padding: 0;
+    margin: 0;    
+    font-size: 1rem;
+    background-color: #dadada;
+}
+* {
+    box-sizing: border-box;
+}
+.github-repos{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #efe2ba;
+    padding: 10px 15px 100px;
+    color: #d79922;
+}
+.github-repos h2{
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
+}
+.github-repos ul{
+	margin: 0;
+	padding: 0;
+}
+.github-repos input{
+    padding: 10px 20px;
+}
+.github-repos input[type="button"]{
+    background-color: #3f51b5;
+    color: #fff;
+    font-weight: bold;    
+    border: 0;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 10px 15px;
+}
+.github-repos .form-container, .github-repos .display-repos{
+    text-align: center;
+}
+.github-repos .loader-icon{
+    display: none;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    border-top: 5px solid #2985c4;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.github-repos .display-repos{
+    display: none;
+    margin-top: 30px;
+}
+.github-repos .display-repos ul li{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #4056a1;
+}
+.github-repos .create-issue{
+    float: right;
+}
+.github-repos .create-issue-container{    
+    width: 100%;
+    margin: 40px auto;
+    padding: 0;
+    border: 1px solid #123c69;
+}
+
+.github-repos .create-issue-container input, .github-repos .create-issue-container textarea{
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    padding: 2px;
+}
+.github-repos .create-issue-container input[type="button"]{
+    margin: 30px auto;
+	width:50%;
+    padding: 15px;
+}
+.github-repos .create-issue-container .close{
+    float: right;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+}
+.github-repos h3{
+    display: inline-block;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 16px;
+}
+.github-repos .issue-header{
+    background-color: #123c69;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+	
+}
+.github-repos .create-issue-container .close:after{
+    content: "\2715";
+    display: block;
+}
+@media(min-width: 768px){
+		.github-repos{
+			width: 800px;			
+		}
+		.github-repos .create-issue-container{    
+			max-width:450px;
+		}
+
+
+}
