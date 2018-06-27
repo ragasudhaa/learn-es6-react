@@ -62,14 +62,17 @@
                 $.ajax({
                     url: issueUrl+'/issues',
                     type: 'POST',
-                    dataType: 'json',                    
+                    dataType: 'json',  
+					headers: {
+					  Authorization: 'token 8c1fdf45450ff5f2e5a272013cc1ff8dda8cc26a'
+					},					
                     data: JSON.stringify({
                       "title": title,
                       "body": desc
                     }),
                     success: function (response) {
-                        $('.issue-header').html('Response');
-                        $('.content').html('New issue registered successfully');
+                        $('.issue-header h3').html('Response');
+                        $('.content').html('New issue registered successfully').css({'padding':'10px','color':'green'});
                     },
 					error: function (error) {
                         $('.issue-header h3').html('Response');
